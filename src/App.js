@@ -681,9 +681,13 @@ class WeatherForm extends React.Component {
                   Rain: <Rain />,
                   Thunderstorm: <Thunderstorm />,
                   Clear: <Sunny />,
-                  Windy: <Windy />,
+                  Squall: <Windy />,
+                  Tornado: <Windy />,
                   Snow: <Snowy />,
                   Fog: <Fog />,
+                  Dust: <Fog />,
+                  Mist: <Fog />,
+                  Haze: <Fog />,
                 }[weather.weather[0].main] || <h4>N/A</h4>}
                 <li>{weather.main.temp} ℉</li>
                 <li>{weather.main.humidity}% Humidity</li>
